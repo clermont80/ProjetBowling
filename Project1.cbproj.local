@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2020/01/10 13:53:18.448,=C:\Users\mclermont\Documents\Embarcadero\Studio\Projets\Project1PCH1.h</Transaction>
+    <Transaction>2020/01/10 13:53:18.452,=C:\Users\mclermont\Documents\Embarcadero\Studio\Projets\File1.c</Transaction>
+    <Transaction>2020/01/10 13:53:51.500,=C:\Users\mclermont\Documents\Embarcadero\Studio\Projets\File2.c</Transaction>
+    <Transaction>2020/01/10 13:54:02.826,C:\Users\mclermont\Documents\Embarcadero\Studio\Projets\comptagepoint.c=C:\Users\mclermont\Documents\Embarcadero\Studio\Projets\File2.c</Transaction>
+    <Transaction>2020/01/10 13:54:56.294,C:\Users\mclermont\Documents\Embarcadero\Studio\Projets\main.c=C:\Users\mclermont\Documents\Embarcadero\Studio\Projets\File1.c</Transaction>
+    <Transaction>2020/01/10 13:55:01.805,C:\Users\mclermont\Documents\Embarcadero\Studio\Projets\Project1.cbproj=C:\Users\mclermont\Documents\Embarcadero\Studio\Projets\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>
