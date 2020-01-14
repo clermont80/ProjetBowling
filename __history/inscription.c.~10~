@@ -6,5 +6,5 @@
 void inscription(Joueur* pointeur_tabjoueur)
 {
 	scanf("s",pointeur_tabjoueur->speudo);   //le joueur saisit son pseudo
-    //créer un tableau de joueur de taille 6 par defaut puis créer un malloc si le nombre de joueur n'est pas 6
+
 }
