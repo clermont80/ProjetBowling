@@ -7,4 +7,5 @@ void inscription(Joueur* pointeur_tabjoueur)
 {
 	scanf("s",pointeur_tabjoueur->speudo);   //le joueur saisit son pseudo
 
+
 }
