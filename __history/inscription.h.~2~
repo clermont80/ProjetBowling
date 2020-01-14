@@ -9,6 +9,6 @@ extern "C" {
 }
 #endif
 
-void inscription(Joueur* pointeur_tabjoueur);
+void inscription(Joueur* pointeur_tabspeudo);
 
 #endif /* INSCRIPTION_H */

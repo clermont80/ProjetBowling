@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "Joueur.h"
+
+
+void inscription(Joueur* pointeur_tabspeudo)
+{
+	int nbjoueur;
+
+    printf("Combien de joueurs êtes vous ? \n");
+
+    do
+    {
+	   scanf("%d",&nbjoueur);
+	}while(nbjoueur>1 && nbjoueur<11);
+
+
+}

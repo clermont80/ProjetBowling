@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "inscription.h"
+
+
+void inscription(Joueur* pointeur_tabjoueur,int nbjoueur)
+{
+	scanf("s",pointeur_tabjoueur->speudo);
+
+}
