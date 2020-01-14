@@ -1,10 +1,32 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "Joueur.h"
 
 
-void comptagepoint(Joueur* pointeur tableau_joueur)
+void comptagepoint(Joueur* pointeurtab_joueur)
 {
-   int touractuel=pointeur->tourcourant;
+   int touractuel;
+   int indice;
+   touractuel=pointeurtab_joueur->tourcourant;
+
+   for(indice=0;indice<touractuel;indice++)
+   {
+       if(pointeurtab_joueur->tab_score[indice]==10 && pointeurtab_joueur->tab_score[indice]==-1) //c'est un strike
+       {
+           pointeurtab_joueur->scorefinal[indice]=10;
+           pointeurtab_joueur->scorefinal[indice+1]=10;
+       }
+
+       if(pointeurtab_joueur->tab_score[indice]+pointeurtab_joueur->tab_score[indice+1]==10) //c'est un spare
+       {
+           pointeurtab_joueur->scorefinal[indice]=10;
+           pointeurtab_joueur->scorefinal[indice+1]*=2; //on double la valeur du 1ier lancer suivant
+       }
+
+       if(pointeurtab_joueur->tab_score[indice]+pointeurtab_joueur->tab_score[indice+1]!=10) //c'est un coup classique
+       {
+           pointeurtab_joueur->scorefinal[indice]= pointeurtab_joueur->tab_score[indice]+pointeurtab_joueur->tab_score[indice+1];
+       }
+   }
 
 }
-

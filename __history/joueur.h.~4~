@@ -6,7 +6,6 @@ typedef struct
 	char speudo[10];
 	int tab_score[21];
 	int scorefinal[10];
-	int tourcourant;
 
 } Joueur;
 

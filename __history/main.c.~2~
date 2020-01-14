@@ -13,6 +13,9 @@
 
 int _tmain(int argc, _TCHAR* argv[]) 
 {
+	joueur test;
+
+	testJoueur(&test);
 
 
 	return 0;
