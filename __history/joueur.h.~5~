@@ -10,6 +10,6 @@ typedef struct
 
 } Joueur;
 
-void combiendejoueur(Joueur * j);
+void testJoueur(Joueur * j);
 
 #endif
