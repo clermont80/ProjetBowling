@@ -18,7 +18,7 @@ void fonction1lancer(Joueur* pointeurtab_joueur)
 	if(nbaleatoirelancer<10)
 	{
 		int touractuel = pointeurtab_joueur->tourcourant;   //on regarde à quel tour on se trouve pour savoir quelle case du tableau tab_score incrémenter
-		pointeurtab_joueur->tab_score[touractuel]
+
 
     }
 
