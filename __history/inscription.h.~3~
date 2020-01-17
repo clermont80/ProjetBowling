@@ -1,7 +1,13 @@
 #ifndef INSCRIPTION_H
 #define INSCRIPTION_H
 
-#include "joueur.h"
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#ifdef __cplusplus
+}
+#endif
 
 void inscription(Joueur* pointeur_tabjoueur);
 
