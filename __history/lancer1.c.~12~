@@ -20,8 +20,6 @@ void fonction1lancer(Joueur* pointeurtab_joueur)
 	{
 	   touractuel = pointeurtab_joueur->tourcourant;   //on regarde à quel tour on se trouve pour savoir quelle case du tableau tab_score incrémenter
 	   pointeurtab_joueur->tab_score[touractuel]=nbaleatoirelancer;
-	   intervallelancer2=10-nbaleatoirelancer //on calcule l'intervalle du second lancer
-	   fonction2lancer(intervallelancer2,Joueur* pointeurtab_joueur); //on lance une deuxieme fois
 
 	}
 
@@ -30,7 +28,7 @@ void fonction1lancer(Joueur* pointeurtab_joueur)
 	   touractuel = pointeurtab_joueur->tourcourant;
 	   pointeurtab_joueur->tab_score[touractuel]=10;   //le premier lancer vaut 10
 	   pointeurtab_joueur->tab_score[touractuel+1]=-1; //le second -1 étant donné qu'il n'est pas joué
-	   pointeurtab_joueur->tourcourant=tourcourant++; //on change de tour
+       pointeurtab_joueur->tourcourant=tourcourant++;
 
 	}
 
