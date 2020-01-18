@@ -1,5 +1,5 @@
-#ifndef COMPTAGEPOINT_H
-#define COMPTAGEPOINT_H
+#ifndef LANCER2_H
+#define LANCER2_H
 
 #include "joueur.h"
 

@@ -7,11 +7,9 @@ struct Joueur
 	char speudo[10];
 	int tab_score[21];
 	int scorefinal[10];
-	int tourcourant;
+	int tourcourant=0;
 
 };
-
-
 
 void combiendejoueur(Joueur * j);
 

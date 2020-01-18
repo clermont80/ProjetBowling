@@ -11,7 +11,7 @@ struct Joueur
 
 };
 
-
+Joueur.tourcourant=0;
 
 void combiendejoueur(Joueur * j);
 

@@ -1,5 +1,5 @@
-#ifndef JOUEUR_H
-#define JOUEUR_H
+#ifndef COMBIENDEJOUEUR_H
+#define COMBIENDEJOUEUR_H
 
 int combiendejoueur();
 
