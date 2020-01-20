@@ -3,15 +3,16 @@
 #include "combiendejoueur.h"
 
 
-void combiendejoueur(int* nbjoueurfinal)
+int combiendejoueur()
 {
-
+	int nbjoueur;
 
 	printf("Combien de joueurs êtes-vous ? \n");
 
 	do
     {
-	   scanf("%d",*nbjoueurfinal);
-	}while(*nbjoueurfinal>1 && *nbjoueurfinal<11);
+	   scanf("%d",&nbjoueur);
+	}while(nbjoueur>1 && nbjoueur<11);
 
+     return nbjoueur;
 }

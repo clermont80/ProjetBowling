@@ -3,6 +3,8 @@
 #include "joueur.h"
 #include "lancer1.h"
 #include "lancer2.h"
+#include "initialisejoueur.h"
+
 
 void fonction1lancer(Joueur* pointeurtab_joueur)
 {
@@ -33,7 +35,7 @@ void fonction1lancer(Joueur* pointeurtab_joueur)
 	   touractuel = pointeurtab_joueur->tourcourant;
 	   pointeurtab_joueur->tab_score[touractuel]=10;   //le premier lancer vaut 10
 	   pointeurtab_joueur->tab_score[touractuel+1]=-1; //le second -1 étant donné qu'il n'est pas joué
-	   pointeurtab_joueur->tourcourant=tourcourant++; //on passe au tour suivant
+	   //pointeurtab_joueur->tourcourant=tourcourant++; //on passe au tour suivant
 
 	}
 

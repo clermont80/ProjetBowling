@@ -13,6 +13,6 @@ struct Joueur
 
 
 
-void combiendejoueur(Joueur * j);
+//void combiendejoueur(Joueur * j);
 
 #endif

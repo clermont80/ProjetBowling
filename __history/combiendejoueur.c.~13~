@@ -11,7 +11,7 @@ void combiendejoueur(int* nbjoueurfinal)
 
 	do
     {
-	   scanf("%d",*nbjoueurfinal);
-	}while(*nbjoueurfinal>1 && *nbjoueurfinal<11);
+	   scanf("%d",&nbjoueurfinal);
+	}while(nbjoueurfinal>1 && nbjoueurfinal<11);
 
 }

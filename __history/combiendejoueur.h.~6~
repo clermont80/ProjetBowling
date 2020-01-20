@@ -1,9 +1,6 @@
 #ifndef COMBIENDEJOUEUR_H
 #define COMBIENDEJOUEUR_H
 
-#include "joueur.h"
-#include "main.c"
-
 void combiendejoueur(int* nbjoueurfinal);
 
 #endif

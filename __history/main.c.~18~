@@ -7,6 +7,7 @@
 #include "lancer1.h"
 #include "lancer2.h"
 #include "comptagepoint.h"
+#include "initialisejoueur.h"
 
 
 #ifdef _WIN32
@@ -22,7 +23,7 @@ int _tmain(int argc, _TCHAR* argv[])
 int nbjoueurfinal;
 int i;
 
-nbjoueurfinal=combiendejoueur();  //on récupère le nombre de joueurs souhaité
+nbjoueurfinal=combiendejoueur(&nbjoueurfinal);  //on récupère le nombre de joueurs souhaité
 
 
 Joueur* tab_joueurmalloc = NULL;
@@ -36,7 +37,7 @@ if(tab_joueurmalloc == NULL) //on regarde si l'allocation de mémoire a marché
 
 for(i=0;i<nbjoueurfinal;i++)
 {
-   tourcourant.tab_joueurmalloc[i]=0;
+   initialisejoueur(&tab_joueurmalloc[i]);
 }
 
 for(i=0;i<nbjoueurfinal;i++)

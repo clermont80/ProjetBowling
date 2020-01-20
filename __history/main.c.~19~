@@ -7,6 +7,7 @@
 #include "lancer1.h"
 #include "lancer2.h"
 #include "comptagepoint.h"
+#include "initialisejoueur.h"
 
 
 #ifdef _WIN32

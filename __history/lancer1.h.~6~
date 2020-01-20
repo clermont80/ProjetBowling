@@ -5,6 +5,6 @@
 
 void fonction1lancer(Joueur* pointeurtab_joueur);
 
-
+//void combiendejoueur(Joueur * j);
 
 #endif

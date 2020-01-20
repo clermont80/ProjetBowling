@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "Joueur.h"
+#include "combiendejoueur.h"
 
 
-int combiendejoueur()
+int combiendejoueur(int* nbjoueurfinal)
 {
 	int nbjoueur;
 
@@ -14,5 +14,5 @@ int combiendejoueur()
 	   scanf("%d",&nbjoueur);
 	}while(nbjoueur>1 && nbjoueur<11);
 
-     return nbjoueur;
+     return nbjoueurfinal;
 }

@@ -1,14 +1,17 @@
 #ifndef JOUEUR_H
 #define JOUEUR_H
 
-typedef struct
+typedef struct Joueur Joueur;
+struct Joueur
 {
 	char speudo[10];
 	int tab_score[21];
 	int scorefinal[10];
 	int tourcourant;
 
-} Joueur;
+};
+
+
 
 void combiendejoueur(Joueur * j);
 
