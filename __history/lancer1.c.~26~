@@ -3,11 +3,13 @@
 #include "joueur.h"
 #include "lancer1.h"
 #include "lancer2.h"
+#include "initialisejoueur.h"
+
 
 void fonction1lancer(Joueur* pointeurtab_joueur)
 {
-	int nbaleatoirelancer;
-	int touractuel;
+	char touche;
+	int touractuel=pointeurtab_joueur->tourcourant;
     int intervallelancer2;
 
 	srand(time(NULL));                      //on génère un nombre aléatoire entre 0 et 10 pour simuler un lancer
@@ -15,9 +17,25 @@ void fonction1lancer(Joueur* pointeurtab_joueur)
 	do
 	{
 		printf("Appuyez sur '*' pour lancer \n");
-		nbaleatoirelancer = rand()%10+0;
-	}while(nbaleatoirelancer!='*');
+		touche = getch();
 
+	}while(touche!='*');
+
+	nbaleatoirelancer = rand()%10+0;
+
+	if(touractuel==20)    //c'est le dernier tour qui comporte 3 lancers
+	{
+         srand(time(NULL));  //on génère un nombre aléatoire entre 0 et 10 pour simuler un lancer
+
+		do
+		{
+			printf("Appuyez sur '*' pour lancer \n");
+			touche = getch();
+
+		}while(touche!='*');
+
+	nbaleatoirelancer = rand()%10+0;
+	}
 
 	if(nbaleatoirelancer<10)   //lancer classique
 	{
@@ -33,7 +51,7 @@ void fonction1lancer(Joueur* pointeurtab_joueur)
 	   touractuel = pointeurtab_joueur->tourcourant;
 	   pointeurtab_joueur->tab_score[touractuel]=10;   //le premier lancer vaut 10
 	   pointeurtab_joueur->tab_score[touractuel+1]=-1; //le second -1 étant donné qu'il n'est pas joué
-	   pointeurtab_joueur->tourcourant=tourcourant++; //on change de tour
+	   //pointeurtab_joueur->tourcourant=tourcourant++; //on passe au tour suivant
 
 	}
 

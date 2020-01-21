@@ -43,7 +43,7 @@ for(i=0;i<nbjoueurfinal;i++)
 
 for(i=0;i<nbjoueurfinal;i++)
 {
-   lancer1(tab_joueurmalloc[i]);
+   fonction1lancer(&tab_joueurmalloc[i]);
 }
 
 

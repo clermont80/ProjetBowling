@@ -56,7 +56,7 @@ void lancer1(Joueur* pointeurtab_joueur)
 
 			pointeurtab_joueur->tab_score[touractuel]=10;   //le premier lancer vaut 10
 			pointeurtab_joueur->tab_score[touractuel+1]=-1; //le second -1 étant donné qu'il n'est pas joué
-			lancer2(intervallelancer2,pointeurtab_joueur);  //le passage de 'intervallelancer2'' est inutile dans le cas du strike mais la définition de la fonction oblige à le mettre en paramètre
+			lancer2(intervallelancer2,pointeurtab_joueur);
 
 		}
 

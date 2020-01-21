@@ -3,7 +3,7 @@
 
 #include "joueur.h"
 
-void lancer1(Joueur* pointeurtab_joueur);
+void fonction1lancer(Joueur* pointeurtab_joueur);
 
 
 

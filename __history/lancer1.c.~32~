@@ -6,7 +6,7 @@
 #include "initialisejoueur.h"
 
 
-void lancer1(Joueur* pointeurtab_joueur)
+void fonction1lancer(Joueur* pointeurtab_joueur)
 {
 	char touche;
 	int touractuel=pointeurtab_joueur->tourcourant;   //on regarde à quel tour on se trouve pour savoir quelle case du tableau tab_score incrémenter
@@ -28,7 +28,7 @@ void lancer1(Joueur* pointeurtab_joueur)
 	{
 	   pointeurtab_joueur->tab_score[touractuel]=nbaleatoirelancer;
 	   intervallelancer2=10-nbaleatoirelancer; //on calcule l'intervalle du second lancer
-	   lancer2(intervallelancer2,pointeurtab_joueur); //on lance une deuxieme fois
+	   fonction2lancer(intervallelancer2,pointeurtab_joueur); //on lance une deuxieme fois
 
 	}
 
@@ -47,7 +47,7 @@ void lancer1(Joueur* pointeurtab_joueur)
 		{
 			 pointeurtab_joueur->tab_score[touractuel]=nbaleatoirelancer;
 			 intervallelancer2=10-nbaleatoirelancer; //on calcule l'intervalle du second lancer
-			 lancer2(intervallelancer2,pointeurtab_joueur); //on lance une deuxieme fois
+			 fonction2lancer(intervallelancer2,pointeurtab_joueur); //on lance une deuxieme fois
 
 		}
 
@@ -56,7 +56,7 @@ void lancer1(Joueur* pointeurtab_joueur)
 
 			pointeurtab_joueur->tab_score[touractuel]=10;   //le premier lancer vaut 10
 			pointeurtab_joueur->tab_score[touractuel+1]=-1; //le second -1 étant donné qu'il n'est pas joué
-			lancer2(intervallelancer2,pointeurtab_joueur);  //le passage de 'intervallelancer2'' est inutile dans le cas du strike mais la définition de la fonction oblige à le mettre en paramètre
+			//pointeurtab_joueur->tourcourant=tourcourant++; //on passe au tour suivant
 
 		}
 

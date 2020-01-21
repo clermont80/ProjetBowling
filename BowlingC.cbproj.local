@@ -2,13 +2,18 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2020/01/18 16:05:49.000.542,=C:\Users\Mathis\Documents\Embarcadero\Studio\Projets\ProjetBowling\File1.c</Transaction>
-    <Transaction>2020/01/18 16:06:18.000.859,C:\Users\Mathis\Documents\Embarcadero\Studio\Projets\ProjetBowling\File1.c=C:\Users\Mathis\Documents\Embarcadero\Studio\Projets\ProjetBowling\lancer2.c</Transaction>
+    <Transaction>2020/01/18 16:06:18.000.859,C:\Users\Mathis\Documents\Embarcadero\Studio\Projets\ProjetBowling\lancer2.c=C:\Users\Mathis\Documents\Embarcadero\Studio\Projets\ProjetBowling\File1.c</Transaction>
     <Transaction>2020/01/18 16:07:01.000.187,=C:\Users\Mathis\Documents\Embarcadero\Studio\Projets\ProjetBowling\File1.h</Transaction>
-    <Transaction>2020/01/18 16:07:15.000.609,C:\Users\Mathis\Documents\Embarcadero\Studio\Projets\ProjetBowling\File1.h=C:\Users\Mathis\Documents\Embarcadero\Studio\Projets\ProjetBowling\lancer2.h</Transaction>
+    <Transaction>2020/01/18 16:07:15.000.609,C:\Users\Mathis\Documents\Embarcadero\Studio\Projets\ProjetBowling\lancer2.h=C:\Users\Mathis\Documents\Embarcadero\Studio\Projets\ProjetBowling\File1.h</Transaction>
     <Transaction>2020/01/18 18:47:23.000.068,=C:\Users\Mathis\Documents\Embarcadero\Studio\Projets\ProjetBowling\File1.c</Transaction>
-    <Transaction>2020/01/18 18:47:35.000.880,C:\Users\Mathis\Documents\Embarcadero\Studio\Projets\ProjetBowling\File1.c=C:\Users\Mathis\Documents\Embarcadero\Studio\Projets\ProjetBowling\initialisejoueur.c</Transaction>
+    <Transaction>2020/01/18 18:47:35.000.880,C:\Users\Mathis\Documents\Embarcadero\Studio\Projets\ProjetBowling\initialisejoueur.c=C:\Users\Mathis\Documents\Embarcadero\Studio\Projets\ProjetBowling\File1.c</Transaction>
     <Transaction>2020/01/18 18:48:07.000.604,=C:\Users\Mathis\Documents\Embarcadero\Studio\Projets\ProjetBowling\File1.h</Transaction>
-    <Transaction>2020/01/18 18:49:28.000.899,C:\Users\Mathis\Documents\Embarcadero\Studio\Projets\ProjetBowling\File1.h=C:\Users\Mathis\Documents\Embarcadero\Studio\Projets\ProjetBowling\initialisejoueur.h</Transaction>
-    <Transaction>2020/01/20 22:16:53.302,C:\Users\Mathis\Documents\Embarcadero\Studio\Projets\ProjetBowling\joueur.c=</Transaction>
+    <Transaction>2020/01/18 18:49:28.000.899,C:\Users\Mathis\Documents\Embarcadero\Studio\Projets\ProjetBowling\initialisejoueur.h=C:\Users\Mathis\Documents\Embarcadero\Studio\Projets\ProjetBowling\File1.h</Transaction>
+    <Transaction>2020/01/20 22:16:53.000.302,C:\Users\Mathis\Documents\Embarcadero\Studio\Projets\ProjetBowling\joueur.c=</Transaction>
+    <Transaction>2020/01/21 16:03:20.591,=C:\Users\mclermont\Documents\Embarcadero\Studio\Projets\ProjetBowling\File1.c</Transaction>
+    <Transaction>2020/01/21 16:03:32.808,C:\Users\mclermont\Documents\Embarcadero\Studio\Projets\ProjetBowling\fonction3lancer.c=C:\Users\mclermont\Documents\Embarcadero\Studio\Projets\ProjetBowling\File1.c</Transaction>
+    <Transaction>2020/01/21 16:04:49.980,C:\Users\mclermont\Documents\Embarcadero\Studio\Projets\ProjetBowling\lancer3.c=C:\Users\mclermont\Documents\Embarcadero\Studio\Projets\ProjetBowling\fonction3lancer.c</Transaction>
+    <Transaction>2020/01/21 16:30:01.964,=C:\Users\mclermont\Documents\Embarcadero\Studio\Projets\ProjetBowling\File1.h</Transaction>
+    <Transaction>2020/01/21 16:30:20.244,C:\Users\mclermont\Documents\Embarcadero\Studio\Projets\ProjetBowling\lancer3.h=C:\Users\mclermont\Documents\Embarcadero\Studio\Projets\ProjetBowling\File1.h</Transaction>
   </Transactions>
 </BorlandProject>

@@ -26,11 +26,6 @@ void comptagepoint(Joueur* pointeurtab_joueur)
        if(pointeurtab_joueur->tab_score[indice]+pointeurtab_joueur->tab_score[indice+1]!=10) //c'est un coup classique
        {
            pointeurtab_joueur->scorefinal[indice]= pointeurtab_joueur->tab_score[indice]+pointeurtab_joueur->tab_score[indice+1];
-	   }
-
-	   if(indice==touractuel-1)  //on se trouve sur le dernier tour où il y a 3 lancers
-	   {
-
        }
    }
 

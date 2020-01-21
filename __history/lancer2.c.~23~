@@ -36,11 +36,6 @@ void lancer2(int intervallelancer2,Joueur* pointeurtab_joueur)
 			 pointeurtab_joueur->tab_score[touractuel+1]=nbaleatoirelancer;
 			 lancer3(pointeurtab_joueur);
 		}
-		else
-		{
-			pointeurtab_joueur->tab_score[touractuel+1]=nbaleatoirelancer;
-			pointeurtab_joueur->tourcourant++;
-        }
 
 		nbaleatoirelancer = rand()%10+0;
 

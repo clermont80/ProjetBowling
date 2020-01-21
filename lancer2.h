@@ -3,6 +3,6 @@
 
 #include "joueur.h"
 
-void fonction2lancer(int intervallelancer2,Joueur* pointeurtab_joueur);
+void lancer2(int intervallelancer2,Joueur* pointeurtab_joueur);
 
 #endif

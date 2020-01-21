@@ -6,6 +6,8 @@
 
 void fonction2lancer(int intervallelancer2,Joueur* pointeurtab_joueur)
 {
+	int touractuel=pointeurtab_joueur->tourcourant;   //on regarde à quel tour on se trouve pour savoir quelle case du tableau tab_score incrémenter
+	char touche;
 	int nbaleatoirelancer;
     int touractuel;
 
@@ -14,11 +16,15 @@ void fonction2lancer(int intervallelancer2,Joueur* pointeurtab_joueur)
 	do
 	{
 		printf("Appuyez sur '*' pour lancer \n");
-		nbaleatoirelancer = rand()%10+nbaleatoirelancer2;
-	}while(nbaleatoirelancer!='*');
+		touche = getch();
 
-	touractuel = pointeurtab_joueur->tourcourant;   //on regarde à quel tour on se trouve pour savoir quelle case du tableau tab_score incrémenter
-	pointeurtab_joueur->tab_score[touractuel]=nbaleatoirelancer;
+	}while(touche!='*');
+
+
+	nbaleatoirelancer = rand()%intervallelancer2+0;
+	pointeurtab_joueur->tab_score[touractuel+1]=nbaleatoirelancer;
+	pointeurtab_joueur->tourcourant++;
+
 
 
 
