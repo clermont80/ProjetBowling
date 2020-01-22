@@ -27,7 +27,6 @@ Joueur* tab_joueurmalloc=NULL;
 combiendejoueur(&nbjoueurfinal);  //on récupère le nombre de joueurs souhaité
 
 
-
 tab_joueurmalloc = malloc(nbjoueurfinal * sizeof(Joueur)); //on alloue de la mémoire pour le nombre de joueurs souhaités
 
 if(tab_joueurmalloc == NULL) //on regarde si l'allocation de mémoire a marché
@@ -43,8 +42,20 @@ for(i=0;i<nbjoueurfinal;i++)
 
 for(i=0;i<nbjoueurfinal;i++)
 {
-   fonction1lancer(&tab_joueurmalloc[i]);
+   initialisetabscorefinal(&tab_joueurmalloc[i]);
 }
+
+for(i=0;i<nbjoueurfinal;i++)
+{
+   lancer1(&tab_joueurmalloc[i]);
+}
+
+for(i=0;i<nbjoueurfinal;i++)
+{
+   comptagepoint(&tab_joueurmalloc[i]);
+}
+
+
 
 
 

@@ -7,12 +7,12 @@ void combiendejoueur(int* nbjoueurfinal)
 {
 
 
-	printf("Combien de joueurs etes-vous ? \n");
+	printf("Combien de joueurs êtes-vous ? \n");
 
 	do
     {
 	   scanf("%d",*nbjoueurfinal);
 	}while(*nbjoueurfinal>1 && *nbjoueurfinal<11);
 
-
+    pritnf("swag");
 }

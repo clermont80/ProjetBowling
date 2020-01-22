@@ -14,13 +14,13 @@ void comptagepoint(Joueur* pointeurtab_joueur)
        if(pointeurtab_joueur->tab_score[indice]==10 && pointeurtab_joueur->tab_score[indice+1]==-1) //c'est un strike
 	   {
            pointeurtab_joueur->scorefinal[indice]=10;
-		   pointeurtab_joueur->scorefinal[indice]+=tab_score[indice+2]+tab_score[indice+3];  //on ajoute aux 10 points la valeur des deux lancers suivants
+		   pointeurtab_joueur->scorefinal[indice] += pointeurtab_joueur->tab_score[indice+2] + pointeurtab_joueur->tab_score[indice+3];  //on ajoute aux 10 points la valeur des deux lancers suivants
        }
 
 	   if(pointeurtab_joueur->tab_score[indice]+pointeurtab_joueur->tab_score[indice+1]==10) //c'est un spare
        {
 		   pointeurtab_joueur->scorefinal[indice]=10;
-		   pointeurtab_joueur->scorefinal[indice]+=tab_score[indice+2]; //on ajoute aux 10 points la valeur du premier lancer suivant
+		   pointeurtab_joueur->scorefinal[indice] += pointeurtab_joueur->tab_score[indice+2]; //on ajoute aux 10 points la valeur du premier lancer suivant
 	   }
 
        if(pointeurtab_joueur->tab_score[indice]+pointeurtab_joueur->tab_score[indice+1]!=10) //c'est un coup classique
@@ -28,7 +28,7 @@ void comptagepoint(Joueur* pointeurtab_joueur)
            pointeurtab_joueur->scorefinal[indice]= pointeurtab_joueur->tab_score[indice]+pointeurtab_joueur->tab_score[indice+1];
 	   }
 
-	   if(indice==touractuel-1)  //on se trouve sur le dernier tour où il y a 3 lancers
+	   if(indice==touractuel-1)  //on se trouve sur le dernier tour oÃ¹ il y a 3 lancers
 	   {
 
        }

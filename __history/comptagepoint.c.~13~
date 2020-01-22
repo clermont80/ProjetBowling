@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "joueur.h"
+#include "Joueur.h"
 
 
 void comptagepoint(Joueur* pointeurtab_joueur)
@@ -12,7 +12,7 @@ void comptagepoint(Joueur* pointeurtab_joueur)
    for(indice=0;indice<touractuel;indice++)
    {
        if(pointeurtab_joueur->tab_score[indice]==10 && pointeurtab_joueur->tab_score[indice+1]==-1) //c'est un strike
-	   {
+       {
            pointeurtab_joueur->scorefinal[indice]=10;
 		   pointeurtab_joueur->scorefinal[indice]+=tab_score[indice+2]+tab_score[indice+3];  //on ajoute aux 10 points la valeur des deux lancers suivants
        }

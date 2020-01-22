@@ -7,7 +7,7 @@ void combiendejoueur(int* nbjoueurfinal)
 {
 
 
-	printf("Combien de joueurs etes-vous ? \n");
+	printf("Combien de joueurs êtes-vous ? \n");
 
 	do
     {

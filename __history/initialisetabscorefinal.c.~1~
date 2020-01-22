@@ -1,0 +1,7 @@
+#include "initialisetabscorefinal.h"
+
+
+void initialisetabscorefinal(Joueur* pointeurtab_joueur)
+{
+
+}

@@ -1,0 +1,12 @@
+#include "initialisetabscorefinal.h"
+
+
+void initialisetabscorefinal(Joueur* pointeurtab_joueur)
+{
+   int i;
+   for(i=0;i<10;i++)
+   {
+	  pointeurtab_joueur->tourcourant=0; //on initialise la variable de la structure joueur ''tabscorefinal'' à 0 pour que chaque case soit incrémentable
+   }
+
+}
