@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <conio.h>
 #include "joueur.h"
 #include "lancer1.h"
 #include "lancer2.h"
@@ -8,21 +9,26 @@
 
 void lancer1(Joueur* pointeurtab_joueur)
 {
-	char touche;
+	char touche=0;
     int nbaleatoirelancer;
 	int touractuel=pointeurtab_joueur->tourcourant;   //on regarde à quel tour on se trouve pour savoir quelle case du tableau tab_score incrémenter
-    int intervallelancer2;
+	int intervallelancer2;
+	char name[10] = pointeurtab_joueur->speudo;
 
-	srand(time(NULL));                      //on génère un nombre aléatoire entre 0 et 10 pour simuler un lancer
+	srand(time(NULL));
+	printf("Votre premier lancer %s",name \n");
 
-	do
+	while(touche!='*')
 	{
+
 		printf("Appuyez sur '*' pour lancer \n");
-		touche = getch();
+		fflush(stdin);
+		scanf("%c",&touche);
 
-	}while(touche!='*');
+	}
 
-	nbaleatoirelancer = rand()%10+0;
+	nbaleatoirelancer = rand()%10+0;   //on génère un nombre aléatoire entre 0 et 10 pour simuler un lancer
+	printf("vous venez de renverser %d quille(s) \n",nbaleatoirelancer);
 
 
 	if(nbaleatoirelancer<10 && touractuel!=9)   //lancer classique

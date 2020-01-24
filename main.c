@@ -25,7 +25,7 @@ int i;
 Joueur* tab_joueurmalloc=NULL;
 
 combiendejoueur(&nbjoueurfinal);  //on récupère le nombre de joueurs souhaité
-
+printf("\n");
 
 tab_joueurmalloc = malloc(nbjoueurfinal * sizeof(Joueur)); //on alloue de la mémoire pour le nombre de joueurs souhaités
 

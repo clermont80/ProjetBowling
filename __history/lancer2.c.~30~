@@ -7,48 +7,52 @@
 void lancer2(int intervallelancer2,Joueur* pointeurtab_joueur)
 {
 	int touractuel=pointeurtab_joueur->tourcourant;   //on regarde à quel tour on se trouve pour savoir quelle case du tableau tab_score incrémenter
-	char touche;
+	char touche=0;
 	int nbaleatoirelancer;
-    int touractuel;
+
 
 	srand(time(NULL));  //on génère un nombre aléatoire entre intervallelancer2 et 10 pour simuler un lancer
 
-	do
+	while(touche!='*')
 	{
 		printf("Appuyez sur '*' pour lancer \n");
-		touche = getch();
+        fflush(stdin);
+		scanf("%c",&touche);
 
-	}while(touche!='*');
+	}
 
 
 	nbaleatoirelancer = rand()%intervallelancer2+0;
 
-	if(touracuel!=9)                  //comptage classique
+	if(touractuel!=9)                  //comptage classique
 	{
 	  pointeurtab_joueur->tab_score[touractuel+1]=nbaleatoirelancer;
 	  pointeurtab_joueur->tourcourant++;
 	}
 
-	if(touracuel==9) //si on se trouve au dernier tour
+	if(touractuel==9) //si on se trouve au dernier tour
 	{
+		if(nbaleatoirelancer+intervallelancer2==10)    //le joueur fait un spare lors du dernier tour, il a droit à un unique lancer bonus
+		{
+			 pointeurtab_joueur->tab_score[touractuel+1]=nbaleatoirelancer;
+			 lancer3(pointeurtab_joueur);
+		}
+		else
+		{
+			pointeurtab_joueur->tab_score[touractuel+1]=nbaleatoirelancer;
+			pointeurtab_joueur->tourcourant++;
+        }
+
 		nbaleatoirelancer = rand()%10+0;
 
-		if(nbaleatoirelancer==10) //strike lors du premier tour bonus
+		if(nbaleatoirelancer==10) //strike lors du premier lancer bonus
 		{
-
 			pointeurtab_joueur->tab_score[touractuel+2]=10;   //le premier lancer vaut 10
 			pointeurtab_joueur->tab_score[touractuel+3]=-1; //le second -1 étant donné qu'il n'est pas joué
 			lancer3(pointeurtab_joueur); //le joueur a droit à un second lancer bonus
-
 		}
 
-		if(nbaleatoirelancer<10)   //lancer classique
-		{
-			 pointeurtab_joueur->tab_score[touractuel]=nbaleatoirelancer;
-			 intervallelancer2=10-nbaleatoirelancer; //on calcule l'intervalle du second lancer
-			 lancer2(intervallelancer2,pointeurtab_joueur); //on lance une deuxieme fois
 
-		}
     }
 
 	

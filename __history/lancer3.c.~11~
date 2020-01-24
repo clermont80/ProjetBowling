@@ -10,7 +10,7 @@ void lancer3(Joueur* pointeurtab_joueur)
 	int touractuel=pointeurtab_joueur->tourcourant;   //on regarde à quel tour on se trouve pour savoir quelle case du tableau tab_score incrémenter
 	char touche;
 	int nbaleatoirelancer;
-
+    int touractuel;
 
 	srand(time(NULL));  //on génère un nombre aléatoire entre intervallelancer2 et 10 pour simuler un lancer
 

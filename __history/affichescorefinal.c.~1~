@@ -1,0 +1,8 @@
+
+
+void affichescorefinal(Joueur* pointeurtab_joueur)
+{
+	int tabscorefinal;
+
+	tabscorefinal = pointeurtab_joueur->scorefinal;
+}

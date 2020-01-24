@@ -3,8 +3,9 @@
 #include "joueur.h"
 #include "lancer1.h"
 #include "lancer2.h"
+#include "lancer3.h"
 
-void fonction2lancer(int intervallelancer2,Joueur* pointeurtab_joueur)
+void lancer3(Joueur* pointeurtab_joueur)
 {
 	int touractuel=pointeurtab_joueur->tourcourant;   //on regarde à quel tour on se trouve pour savoir quelle case du tableau tab_score incrémenter
 	char touche;
@@ -20,10 +21,20 @@ void fonction2lancer(int intervallelancer2,Joueur* pointeurtab_joueur)
 
 	}while(touche!='*');
 
+	nbaleatoirelancer = rand()%10+0;
 
-	nbaleatoirelancer = rand()%intervallelancer2+0;
-	pointeurtab_joueur->tab_score[touractuel+1]=nbaleatoirelancer;
-	pointeurtab_joueur->tourcourant++;
+	if(nbaleatoirelancer==10) //strike lors du second (et dernier) lancer bonus
+	{
+
+		pointeurtab_joueur->tab_score[touractuel+4]=10;   //le premier lancer vaut 10
+		pointeurtab_joueur->tab_score[touractuel+5]=-1; //le second -1 étant donné qu'il n'est pas joué
+	}
+	else
+	{
+        pointeurtab_joueur->tab_score[touractuel+2]=nbaleatoirelancer;
+    }
+
+	pointeurtab_joueur->tourcourant++;  //à ce stade le jeu est terminé
 
 
 

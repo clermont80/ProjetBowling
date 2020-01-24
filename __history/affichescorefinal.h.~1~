@@ -1,0 +1,10 @@
+#ifndef AFFICHESCOREFINAL_H
+#define AFFICHESCOREFINAL_H
+
+#include "joueur.h"
+
+void lancer1(Joueur* pointeurtab_joueur);
+
+
+
+#endif
