@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <conio.h>
 #include "joueur.h"
 #include "lancer1.h"
 #include "lancer2.h"
@@ -16,12 +15,12 @@ void lancer1(Joueur* pointeurtab_joueur)
 
 	srand(time(NULL));                      //on génère un nombre aléatoire entre 0 et 10 pour simuler un lancer
 
-	while(touche!='*')
+	do
 	{
 		printf("Appuyez sur '*' pour lancer \n");
 		touche = getch();
 
-	}
+	}while(touche!='*');
 
 	nbaleatoirelancer = rand()%10+0;
 

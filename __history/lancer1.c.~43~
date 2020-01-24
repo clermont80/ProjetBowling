@@ -19,7 +19,7 @@ void lancer1(Joueur* pointeurtab_joueur)
 	while(touche!='*')
 	{
 		printf("Appuyez sur '*' pour lancer \n");
-		touche = getch();
+		getch(touche);
 
 	}
 

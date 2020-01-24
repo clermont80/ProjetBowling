@@ -9,7 +9,7 @@
 
 void lancer1(Joueur* pointeurtab_joueur)
 {
-	char touche;
+	char touche='d';
     int nbaleatoirelancer;
 	int touractuel=pointeurtab_joueur->tourcourant;   //on regarde à quel tour on se trouve pour savoir quelle case du tableau tab_score incrémenter
     int intervallelancer2;
