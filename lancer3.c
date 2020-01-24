@@ -23,6 +23,8 @@ void lancer3(Joueur* pointeurtab_joueur)
 	}
 
 	nbaleatoirelancer = rand()%10+0;
+	printf("vous venez de renverser %d quille(s) \n",nbaleatoirelancer);
+	printf("\n");
 
 	if(nbaleatoirelancer==10) //strike lors du second (et dernier) lancer bonus
 	{

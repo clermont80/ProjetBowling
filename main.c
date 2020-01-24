@@ -47,6 +47,11 @@ for(i=0;i<nbjoueurfinal;i++)
 
 for(i=0;i<nbjoueurfinal;i++)
 {
+   inscription(&tab_joueurmalloc[i]);
+}
+
+for(i=0;i<nbjoueurfinal;i++)
+{
    lancer1(&tab_joueurmalloc[i]);
 }
 

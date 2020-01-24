@@ -7,35 +7,43 @@
 void lancer2(int intervallelancer2,Joueur* pointeurtab_joueur)
 {
 	int touractuel=pointeurtab_joueur->tourcourant;   //on regarde à quel tour on se trouve pour savoir quelle case du tableau tab_score incrémenter
-	char touche;
+	char touche=0;
 	int nbaleatoirelancer;
-    int touractuel;
 
+	printf("Votre second lancer \n");
 	srand(time(NULL));  //on génère un nombre aléatoire entre intervallelancer2 et 10 pour simuler un lancer
 
-	do
+	while(touche!='*')
 	{
+	    printf(" \n");
 		printf("Appuyez sur '*' pour lancer \n");
-		touche = getch();
+        fflush(stdin);
+		scanf("%c",&touche);
 
-	}while(touche!='*');
-
+	}
 
 	nbaleatoirelancer = rand()%intervallelancer2+0;
+	printf("vous venez de renverser %d quille(s) \n",nbaleatoirelancer);
+	printf("\n");
 
-	if(touracuel!=9)                  //comptage classique
+	if(touractuel!=9)                  //comptage classique
 	{
 	  pointeurtab_joueur->tab_score[touractuel+1]=nbaleatoirelancer;
 	  pointeurtab_joueur->tourcourant++;
 	}
 
-	if(touracuel==9) //si on se trouve au dernier tour
+	if(touractuel==9) //si on se trouve au dernier tour
 	{
 		if(nbaleatoirelancer+intervallelancer2==10)    //le joueur fait un spare lors du dernier tour, il a droit à un unique lancer bonus
 		{
 			 pointeurtab_joueur->tab_score[touractuel+1]=nbaleatoirelancer;
 			 lancer3(pointeurtab_joueur);
 		}
+		else
+		{
+			pointeurtab_joueur->tab_score[touractuel+1]=nbaleatoirelancer;
+			pointeurtab_joueur->tourcourant++;
+        }
 
 		nbaleatoirelancer = rand()%10+0;
 

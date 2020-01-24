@@ -9,8 +9,10 @@ void lancer2(int intervallelancer2,Joueur* pointeurtab_joueur)
 	int touractuel=pointeurtab_joueur->tourcourant;   //on regarde à quel tour on se trouve pour savoir quelle case du tableau tab_score incrémenter
 	char touche=0;
 	int nbaleatoirelancer;
+	char name[10] = pointeurtab_joueur->speudo;
 
-	printf("Votre second lancer \n");
+
+	printf("Votre second lancer %s \n",name);
 	srand(time(NULL));  //on génère un nombre aléatoire entre intervallelancer2 et 10 pour simuler un lancer
 
 	while(touche!='*')
@@ -24,6 +26,7 @@ void lancer2(int intervallelancer2,Joueur* pointeurtab_joueur)
 
 	nbaleatoirelancer = rand()%intervallelancer2+0;
 	printf("vous venez de renverser %d quille(s) \n",nbaleatoirelancer);
+	printf("\n");
 
 	if(touractuel!=9)                  //comptage classique
 	{
